@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Steady Shooter with Teddies</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game-container">
+
+    <!-- Background (non-scrolling) -->
+    <div id="background-wrapper">
+      <img 
+        id="level-background"
+        src="img/background_1.jpeg" 
+        alt="Level Background"
+      />
+    </div>
+
+    <!-- Main character (plane) -->
+    <img id="main-character" src="img/main.png" alt="Main Character" />
+
+    <!-- Bullets, Teddies, Bonus items -->
+    <div id="game-objects"></div>
+
+    <!-- HUD -->
+    <div id="hud">
+      <!-- Health Bar Container -->
+      <p>Health: 
+        <span id="health-container">
+          <span id="health-bar"></span>
+        </span>
+      </p>
+
+      <p>Score: <span id="score">0</span></p>
+      <p>Level: <span id="level-display">1</span></p>
+      <p>Time Left: <span id="time-left">60</span> s</p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
